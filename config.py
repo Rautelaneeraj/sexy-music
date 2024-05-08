@@ -14,10 +14,10 @@ API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Get Your bot username
-BOT_USERNAME = getenv("BOT_USERNAME" , "Rivtela_bot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "rautela_x_music_bot")
 
 # Don't Add style font 
-BOT_NAME = getenv("BOT_NAME" , "Rivtela_bot")
+BOT_NAME = getenv("BOT_NAME" , "rautela_x_music_bot")
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -110,7 +110,7 @@ DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 
 
 if SUPPORT_CHANNEL:
-    if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
+    if not re.match("https://t.me/teri_yaad", SUPPORT_CHANNEL):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHANNEL url is wrong. Please ensure that it starts with https://"
         )
